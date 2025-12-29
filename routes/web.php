@@ -15,12 +15,10 @@ Route::get('/scraping-status', [ScrapingStatusController::class, 'index']);
 
 Route::get('/crawl-products-menu', [ScrapController::class, 'productsMenu']);
 Route::get('/scrap-products',[ScrapController::class, 'scrapeAll']);
-Route::get('/test',[ScrapController::class, 'test']);
-Route::get('/run',[ScrapController::class, 'run']);
+
 
 
 Route::get('/createJob',[CollectionScrap::class, 'createJob']);
-Route::get('/tt',[ScrapController::class, 'scrap']);
 
 Route::get('/export',[CollectionScrap::class,'export']);
 
